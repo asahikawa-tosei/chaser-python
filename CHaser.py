@@ -4,9 +4,9 @@ import os
 
 class Client:
     def __init__(self):
-        self.port = input("ポート番号を入力してください → ")
-        self.name = input("ユーザー名を入力してください → ")[:15]
-        self.host = input("サーバーのIPアドレスを入力してください → ")
+        self.port = 2009
+        self.name = "Your Name"
+        self.host = "192.168.100.100"
 
         if not self.__ip_judge(self.host):
             os._exit(1)
